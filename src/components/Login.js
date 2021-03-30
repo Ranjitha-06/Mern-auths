@@ -17,7 +17,7 @@ const Login=()=>{
         name=n;
         email=e;
         password=p;
-        fetch("https://mern-auths.herokuapp.com/signup",{
+        fetch("/signup",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"
@@ -44,7 +44,7 @@ const Login=()=>{
     
     const postData=()=>{
       
-        fetch("https://mern-auths.herokuapp.com/signin",{
+        fetch("/signin",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"

@@ -14,7 +14,7 @@ const SignUp=()=>{
             M.toast({html:"invalid email",classes:"#ef5350 red lighten-1"});
             return;
         }
-        fetch("https://mern-auths.herokuapp.com/signup",{
+        fetch("/signup",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"
