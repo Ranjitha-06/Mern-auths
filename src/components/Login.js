@@ -44,7 +44,7 @@ const Login=()=>{
     
     const postData=()=>{
       
-        fetch("/signin",{
+        fetch("https://mern-auths.herokuapp.com/signin",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"
